@@ -22,15 +22,13 @@ defmodule Sentinel.DealerRater.ParseReviews do
   end
 
   defp build_review(review_entry) do
-    attrs = %{
+    Review.build!(%{
       id: extract_id(review_entry),
       date: build_date(review_entry),
       rating: extract_rating(review_entry),
       content: extract_text(review_entry, "p.review-content"),
       employees: build_employees(review_entry)
-    }
-
-    Review.build!(attrs)
+    })
   end
 
   defp extract_id(review_entry) do
@@ -87,12 +85,10 @@ defmodule Sentinel.DealerRater.ParseReviews do
   end
 
   defp build_employee(element) do
-    attrs = %{
+    Employee.build!(%{
       id: extract_attr(element, "data-emp-id"),
       name: extract_text(element)
-    }
-
-    Employee.build!(attrs)
+    })
   end
 
   defp extract_text(node, selector), do: node |> Floki.find(selector) |> extract_text()
