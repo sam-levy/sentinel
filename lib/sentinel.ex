@@ -1,4 +1,6 @@
 defmodule Sentinel do
+  alias Sentinel.{DealerRater, Intelligence}
+
   @moduledoc """
   Documentation for `Sentinel`.
   """
@@ -14,5 +16,13 @@ defmodule Sentinel do
   """
   def hello do
     :world
+  end
+
+  def suspicious_reviews(amount) do
+    DealerRater.list_reviews() |> Intelligence.suspicious_reviews(amount)
+  end
+
+  def dangerous_offenders(amount) do
+    DealerRater.list_reviews() |> Intelligence.dangerous_offenders(amount)
   end
 end

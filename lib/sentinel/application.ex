@@ -4,7 +4,8 @@ defmodule Sentinel.Application do
   @impl true
   def start(_type, _args) do
     children = [
-      {Sentinel.DealerRater, [pages: 5]}
+      {Sentinel.DealerRater, [pages: 5]},
+      {Sentinel.CLI, []}
     ]
 
     opts = [strategy: :one_for_one, name: Sentinel.Supervisor]
