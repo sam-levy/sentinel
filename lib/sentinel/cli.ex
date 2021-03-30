@@ -19,9 +19,9 @@ defmodule Sentinel.CLI do
 
     IO.puts("""
 
-    ----------------------------------
-    ####    Welcome to the CIA    ####
-    ----------------------------------
+    ---------------------------------
+    ####   Welcome to Sentinel   ####
+    ---------------------------------
 
     """)
   end
@@ -52,7 +52,7 @@ defmodule Sentinel.CLI do
 
     ########################################################################
 
-    ## These are the top reviews from our suspect in order of dangerousness:
+    ## These are the top reviews from our suspects in order of dangerousness:
 
     """)
 
