@@ -41,6 +41,7 @@ defmodule Sentinel.MixProject do
     [
       {:datix, "~> 0.1.1"},
       {:floki, "~> 0.30.0"},
+      {:persistent_ets, "~> 0.2.1"},
       {:tesla, "~> 1.4.0"},
       {:credo, "~> 1.5", only: [:dev, :test], runtime: false},
       {:excoveralls, "~> 0.10", only: :test}
