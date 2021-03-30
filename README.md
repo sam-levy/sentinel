@@ -1,6 +1,6 @@
 # Sentinel
 
-![Sentinel](https://lh3.googleusercontent.com/proxy/Ks5U_sFQ13mjQD9coGwj7M3UVfARepiEqIscAWh3DNEvdqeIh-S-F8k6sQiE8SIT4zrOGPXmRyMLOy5kg13D5AVIDuspRRs4)
+![Sentinel](sentinel.png)
 
 Sentinel is a top-secret ultra-sophisticated CIA tool for counter-espionage missions. In the hands of highly skilled agents, Sentinel can be used to collect and analyze valuable information about intelligence activities of enemy nations inside sovereign frontiers.
 ## Installation
