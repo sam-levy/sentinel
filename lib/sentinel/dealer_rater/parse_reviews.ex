@@ -33,8 +33,8 @@ defmodule Sentinel.DealerRater.ParseReviews do
 
   defp extract_id(review_entry) do
     review_entry
-    |> Floki.attribute("div.review-entry > a", "name")
-    |> hd()
+    |> Floki.find("div.review-entry > a")
+    |> extract_attr("name")
     |> extract_text()
     |> build_internal_id()
   end
@@ -60,9 +60,8 @@ defmodule Sentinel.DealerRater.ParseReviews do
 
   defp extract_rating(review_entry) do
     review_entry
-    |> Floki.find("div.dealership-rating")
-    |> Floki.attribute("div.rating-static", "class")
-    |> hd()
+    |> Floki.find("div.dealership-rating > div.rating-static")
+    |> extract_attr("class")
     |> String.split()
     |> find_rating_class()
     |> parse_rating_from_class()
