@@ -100,7 +100,7 @@ defmodule Sentinel.DealerRater.ParseReviews do
   defp extract_text(node) when is_binary(node) do
     {:ok, document} = Floki.parse_document(node)
 
-    document |> Floki.text(deep: false) |> String.trim()
+    extract_text(document)
   end
 
   defp extract_text(node), do: node |> Floki.text(deep: false) |> String.trim()
