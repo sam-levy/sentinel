@@ -39,6 +39,8 @@ defmodule Sentinel.MixProject do
 
   defp deps do
     [
+      {:datix, "~> 0.1.1"},
+      {:floki, "~> 0.30.0"},
       {:tesla, "~> 1.4.0"},
       {:credo, "~> 1.5", only: [:dev, :test], runtime: false},
       {:excoveralls, "~> 0.10", only: :test}
