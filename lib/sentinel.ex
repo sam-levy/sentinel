@@ -2,21 +2,8 @@ defmodule Sentinel do
   alias Sentinel.{DealerRater, Intelligence}
 
   @moduledoc """
-  Documentation for `Sentinel`.
+  Sentinel fetches valuable information about enemy spies activities
   """
-
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> Sentinel.hello()
-      :world
-
-  """
-  def hello do
-    :world
-  end
 
   def suspicious_reviews(amount) do
     DealerRater.list_reviews() |> Intelligence.suspicious_reviews(amount)
