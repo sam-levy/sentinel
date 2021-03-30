@@ -15,7 +15,7 @@ To install the dependencies of this project run `mix deps.get`.
 
 To start Sentinel just run `mix run --no-halt` in the command line of your cutting-edge spionage device (a.k.a computer).
 
-Run `mix test` to check if this wonderful piece of equipment is well calibrated and ready to action.
+Run `mix test` to check if this wonderful piece of equipment is well calibrated and ready for action.
 ## Functionalities
 
 For the first time it runs, Sentinel will fetch information about its target and parse it. Sentinel will also cache the parsed information in memory in order to avoid showing itself too much and raising suspicion about its activities. The information will be refreshed every two hours in order to keep track of the latest super suspicious reviews. In the case of the counter-counter-intelligence (yep, two times) of the target identifies and puts Sentinel down, the information acquired will be available on disk. As soon as Sentinel resurrects from its ashes, the information will be ready to be analyzed even if there is no internet. By the time internet connection is available again, Sentinel will fetch new information about the target suspicious activities of selling cars and having good reviews from its customers.
