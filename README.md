@@ -2,7 +2,7 @@
 
 ![Sentinel](sentinel.png)
 
-Sentinel is a top-secret ultra-sophisticated CIA tool for counter-espionage missions. In the hands of a highly skilled agent, Sentinel can be used to collect and analyze valuable information about intelligence activities of enemy nations inside sovereign frontiers.
+Sentinel is a top-secret ultra-sophisticated CIA tool for counter-espionage missions. In the hands of a highly skilled agent, Sentinel can be used to collect and analyze valuable information about intelligence activities of enemy nations inside borders.
 ## Installation
 ### Elixir
 
