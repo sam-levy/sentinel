@@ -25,3 +25,6 @@ sentinel-*.tar
 
 # Temporary files for e.g. tests
 /tmp
+
+# Ets tables backup
+/ets_tabs/
