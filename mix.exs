@@ -39,6 +39,7 @@ defmodule Sentinel.MixProject do
 
   defp deps do
     [
+      {:tesla, "~> 1.4.0"},
       {:credo, "~> 1.5", only: [:dev, :test], runtime: false},
       {:excoveralls, "~> 0.10", only: :test}
     ]
