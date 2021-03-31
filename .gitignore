@@ -27,4 +27,4 @@ sentinel-*.tar
 /tmp
 
 # Ets tables backup
-/ets_tabs/*
+/ets_tabs/*.tab
